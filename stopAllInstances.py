@@ -21,14 +21,3 @@ for region in regions: #for each region
         ) #stop the instance
         for action in response['StoppingInstances']:
             pprint("Stopping Instance " + action['InstanceId'] + " in region " + region)
-
-
-
-
-
-"""
-for reservation in response['Reservations']:
-    for instance in reservation['Instances']:
-        runningInstances.append(instance['InstanceId'])
-pprint(runningInstances)
-"""
