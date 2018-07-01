@@ -3,7 +3,7 @@ from pprint import pprint
 
 client = boto3.client('ec2') #set up the EC2 client
 
-runningInstances = [] #plaeholder for a list of instances that are running
+runningInstances = [] #placeholder for a list of instances that are running
 
 #get a list of all the regions
 regions = [region['RegionName'] for region in client.describe_regions()['Regions']]
